@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yur Tur</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/lan-page.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+              <div>
+                <a href="./pages/lan-page.html"> <img src="./img/yurtur-logo.png" class="yurtur-logo pt-4
+                  pb-4 " alt=""></a>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <li class="nav-item list-unstyled">
+                  <a class="nav-link text-white fs-5" aria-current="page" href="./pages/services.html">Услуги</a>
+                </li>
+                <li class="nav-item list-unstyled">
+                  <a class="nav-link text-white fs-5" href="./pages/aboutus.html">О нас</a>
+                </li>
+                <li class="nav-item list-unstyled">
+                  <a class="nav-link text-white fs-5" href="#popular__cost">Популярные места</a>
+                </li>
+                <li class="nav-item list-unstyled">
+                  <a class="nav-link text-white fs-5" href="./pages/social-network.html">Соц.сети</a>
+                </li>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <img src="./img/header-ps.png" class="landing__img" alt="">
+
+  
+      <section class="landing">
+        <div class="container">
+          <div class="d-flex justify-content-center align-items-center  mt-5">
+            <img src="./img/header-logo.png" class="header__logo" alt="">
+          </div>
+  
+          <div class="mt-5">
+            <!-- Explanation in JS tab -->
+  
+            <!-- The two texts -->
+            <div id="text__animation">
+              <span id="text1"></span>
+              <span id="text2"></span>
+            </div>
+  
+            <!-- The SVG filter used to create the merging effect -->
+            <svg id="filters">
+              <defs>
+                <filter id="threshold">
+                  <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+                  <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 255 -140" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+  
+          <div class="d-flex flex-column justify-content-center align-items-center pb-5">
+            <h5 class="text-white text-center pb-4">
+              Незабываемые путешествия
+              по выгодной цене с <span class="text-warning">"Yur Tur"</span>
+            </h5>
+  
+            <div class="light__btn">
+              <div class="btn"><a href="#dubai__cost">Подробнее</a></div>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+    </div>
+  </header>
+
+
+  <main>
+    
+
+    <section class="uzbekistan">
+      <div class="container">
+        <div class="tour-uzbekistan">
+          <h1 class="pt-5">Откройте для себя новый Узбекистан!</h1>
+
+          <p class="mt-5 mb-5">
+            Узбекистан - это загадочная страна Востока, где
+            истории городов собирались в легенды, где
+            круглый год светит солнце и отражением
+            этому уникальная природа и красивые
+            сердцем люди.
+            . Она славится своими мечетями, мавзолеями и сооружениями, возведенными на Великом шелковом пути – древней
+            торговой дороге между Китаем и Средиземноморьем.
+          </p>
+
+          <div class="light__btn pb-5">
+            <div class="btn"><a href="#">Бронировать</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="makka">
+      <div class="container">
+        <div class="tour-makka">
+          <h1 class="pt-5">MAKKA</h1>
+
+          <p class="mt-5 mb-5">
+            Мекка – город, который находится в западной части
+            Саудовской Аравии в 100 километрах от Красного
+            моря. Известен как центр паломничества для
+            мусульман. Немусульмане в Мекку попасть
+            не могут – это запрещено. Климат: тропический
+            пустынный. Мекка – это один из самых жарких
+            городов мира. Летом температура поднимается
+            выше +40 градусов, а зимой опускается примерно
+            до +20 градусов.
+          </p>
+
+          <div class="light__btn pb-5">
+            <div class="btn"><a href="#">Бронировать</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dubai" id="dubai__cost">
+      <div class="container">
+        <div class="tour-dubai">
+          <h1 class="pt-5">DUBAI</h1>
+
+          <p class="mt-5 mb-5">
+            Дубай – город и эмират на побережье Персидского залива в Объединенных Арабских Эмиратах, который славится
+            своими роскошными магазинами, ультрасовременной архитектурой, ресторанами и ночными клубами. Силуэт города
+            формируют бесчисленные небоскребы, в том числе Бурдж-Халифа высотой 830 метров. У его основания расположен
+            музыкальный фонтан "Дубай", подсвеченный прожекторами.
+          </p>
+
+          <div class="light__btn pb-5">
+            <div class="btn"><a href="#">Бронировать</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" id="popular__cost">
+      <div class="container text-center">
+        <h1 class="pt-5 text-white">Наши Услиги</h1>
+      </div>
+      <div class="hero-section">
+        <div class="card-grid">
+          <div class="card">
+
+            <div class="card__background" style="background-image: url(./img/makka-tour.png)"></div>
+
+            <div class="card__content d-flex flex-column justify-content-between align-items-center">
+
+              <h3 class="card__heading">Мекка</h3>
+              <p class="card__category text-center">Мекка</p>
+
+              <button class="learn-more cards__btn">
+
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+
+
+                <a href="./pages/chek list/check-list.html"><span class="button-text">Подробнее</span></a>
+              </button>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__background" style="background-image: url(./img/dubai-tour.png)"></div>
+            <div class="card__content d-flex flex-column justify-content-between align-items-center">
+              <h3 class="card__heading">Дубай</h3>
+
+              <p class="card__category">Дубай</p>
+
+              <button class="learn-more cards__btn">
+
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+
+
+                <a href="./pages/services.html"><span class="button-text">Подробнее</span></a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__background" style="background-image: url(./img/toshkent-tour.png)"></div>
+            <div class="card__content d-flex flex-column justify-content-between align-items-center">
+              <h3 class="card__heading">Ташкент</h3>
+
+              <p class="card__category">Ташкент</p>
+
+              <button class="learn-more cards__btn">
+
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+
+
+                <a href="./pages/services.html"><span class="button-text">Подробнее</span></a>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="card">
+            <div class="">
+              <div class="card__background" style="background-image: url(./img/egypet-tour.png)"></div>
+              <div class="card__content d-flex flex-column justify-content-between align-items-center">
+                <h3 class="card__heading">Египет</h3>
+
+                <p class="card__category">Египет</p>
+
+                <button class="learn-more cards__btn">
+
+                  <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+
+
+                  <a href="./pages/services.html"><span class="button-text">Подробнее</span></a>
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center align-items-center pb-4">
+        <a href="./pages/services.html" class="text-decoration-none text-warning"><button data-hover="click me!"><div>Все Наши Услуги</div></button></a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <section class="footer">
+      <div class="container">
+        <div class="footer-list d-flex justify-content-between align-items-center">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div>
+              <a href="tel: +998990013878" class="text-decoration-none">
+                <h3 class="text-white">+998 (99) 001-38-78</h3>
+              </a>
+              <a href="tel: +998990013878" class="text-decoration-none">
+                <h3 class="text-white">+998 (99) 001-38-78</h3>
+              </a>
+            </div>
+            <div>
+              <a href=""><i class="fa-brands fa-telegram text-white fs-3"></i></a>
+              <a href=""><i class="fa-brands fa-instagram text-white fs-3 me-2 ms-2"></i></a>
+              <a href=""><i class="fa-brands fa-youtube text-white fs-3"></i></a>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center p-3">
+            <img src="./img/header-logo.png" alt="">
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <ul class="list-unstyled">
+              <a href="./pages/aboutus.html" class="text-decoration-none text-white fs-3">
+                <li class="">О нас</li>
+              </a>
+              <a href="./pages/services.html" class="text-decoration-none text-white fs-3">
+                <li class="">Услуги</li>
+              </a>
+              <a href="" class="text-decoration-none text-white fs-3">
+                <li class="">Популярные места</li>
+              </a>
+              <a href="./pages/social-network.html" class="text-decoration-none text-white fs-3">
+                <li class="">Соц.сети</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="./script/popper.min.js"></script>
+  <script src="./script/bootstrap.bundle.min.js"></script>
+  <script src="./script/FontAwesome.js"></script>
+  <script src="./script/lanSript.js"></script>
+</body>
+
+</html>

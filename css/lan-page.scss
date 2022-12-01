@@ -1,0 +1,813 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(../img/header-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+.navbar-collapse {
+    flex-grow: 0.5 !important;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: block !important;
+}
+
+.navbar {
+    background: rgba(231, 120, 16, 0.021);
+    backdrop-filter: blur(50px);
+    z-index: 2;
+}
+
+.nav-link {
+    text-shadow: 0px 0px 20px orange;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: orange;
+    transform: scale(0);
+    transition: 0.3s linear;
+}
+
+.nav-link:hover::after {
+    transform: scale(1);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.header__logo{
+    z-index: 2;
+}
+
+
+.travel__img {
+    width: 600px;
+}
+
+.landing{
+    z-index: 3;
+}
+
+.landing__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* Explanation in JS tab */
+
+/* Cool font from Google Fonts! */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+
+#text__animation {
+    /* Center the text in the viewport. */
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+    filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1,
+#text2 {
+    color: white;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+// // ===HEADER BTN===
+
+.light__btn .btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light__btn .btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 400px;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+
+.light__btn .btn:hover a {
+    letter-spacing: 3px;
+}
+
+.light__btn .btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+}
+
+.light__btn .btn:hover a::before {
+    transform: skewX(45deg) translate(200px);
+}
+
+.light__btn .btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+
+.light__btn .btn:hover::before
+
+/*lightup button*/
+    {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.light__btn .btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+
+.light__btn .btn:hover::after
+
+/*lightup button*/
+    {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.light__btn .btn:nth-child(1)::before,
+/*chnage 1*/
+.light__btn .btn:nth-child(1)::after {
+    background: orange;
+    box-shadow: 0 0 5px orange, 0 0 15px orange, 0 0 30px orange,
+        0 0 60px orange;
+}
+
+// // ===HEADER FINISHED===
+
+
+// // ===MAIN STARTS===
+
+
+
+// // ===SECTION INFO STARTS===
+
+.info-block {
+    position: relative;
+    top: -30px;
+    background: transparent;
+}
+
+.trav-info__block {
+    width: 1150px;
+    height: 132px;
+    background: orange;
+    border-radius: 55px;
+}
+
+.trav-info__block p {
+    text-shadow: 0px 0px 10px black;
+}
+
+
+// // ===SECTION INFO FINISHED===
+
+
+// // ===SECTION TRAVEL STARTS===
+
+.uzbekistan {
+    background-image: url(../img/uzbekistan-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 600px;
+}
+
+.tour-uzbekistan p {
+    width: 725px;
+    font-size: 20px;
+}
+
+
+.makka {
+    background-image: url(../img/makka-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 600px;
+}
+
+.tour-makka p {
+    width: 725px;
+    font-size: 20px;
+}
+
+.dubai {
+    background-image: url(../img/dubai-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 600px;
+}
+
+.tour-dubai p {
+    width: 725px;
+    font-size: 20px;
+}
+
+// // ===SECTION TRAVEL FINISHED===
+
+// // ===hero-section STARTS===
+
+:root {
+    --background-dark: #2d3548;
+    --text-light: rgba(255, 255, 255, 0.6);
+    --text-lighter: rgba(255, 255, 255, 0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+}
+
+.cards {
+    background-image: url(../img/cards-bg.png);
+}
+
+.hero-section {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card {
+    border-radius: 25px;
+    border: 2px solid orange;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+}
+
+@media(min-width: 540px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 960px) {
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card__info {
+    list-style: none;
+    position: relative;
+    border-radius: 25px;
+    border: 2px solid orange;
+}
+
+.card:before {
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+
+.card__background {
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transition:
+        filter 200ms linear,
+        transform 200ms linear;
+}
+
+.card:hover .card__background {
+    transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover>.card:not(:hover) .card__background {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+}
+
+.card__category {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+}
+
+.card__heading {
+    color: var(--text-lighter);
+    font-size: 40px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    line-height: 1.4;
+}
+
+button:hover {
+    cursor: pointer
+}
+
+button {
+    background: transparent;
+    outline: none;
+    color: orange;
+    position: relative;
+    border: 2px solid #111;
+    padding: 15px 50px;
+    overflow: hidden;
+    border: 3px solid orange;
+    border-radius: 15px;
+}
+
+/*button:before (attr data-hover)*/
+button:hover:before {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+button:before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 1.1em;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    opacity: 0;
+    transform: translate(-100%, 0);
+    transition: all .3s ease-in-out;
+}
+
+/*button div (button text before hover)*/
+button:hover div {
+    opacity: 0;
+    transform: translate(100%, 0)
+}
+
+button div {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    transition: all .3s ease-in-out;
+}
+
+// ===MAIN FINISHED===
+
+
+// ===FOOTER STARTS===
+
+.footer {
+    background-image: url(../img/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+}
+
+.footer-list {
+    height: 100%;
+}
+
+.list__block li {
+    font-size: 20px;
+}
+
+
+
+
+
+// ===MEDIA===
+
+@media (max-width: 991px) {
+    .footer-list h3 {
+        font-size: 20px;
+    }
+
+    .footer-list img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .trav-info__block p {
+        font-size: 13px;
+    }
+
+    .tour-uzbekistan {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tour-uzbekistan p {
+        width: 600px;
+    }
+
+    .tour-makka {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tour-makka p {
+        width: 600px;
+    }
+
+    .tour-dubai {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tour-dubai p {
+        width: 600px;
+    }
+
+    .footer-list img {
+        width: 150px;
+    }
+
+    .footer-list h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .footer-list li {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .uzbekistan {
+        height: 600px;
+    }
+
+    .makka {
+        height: 500px;
+    }
+
+    .dubai {
+        height: 500px;
+    }
+
+    .tour-uzbekistan .light__btn .btn {
+        width: 180px;
+    }
+
+    .tour-uzbekistan h1 {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .tour-uzbekistan p {
+        width: 400px;
+        font-size: 15px;
+    }
+
+    .tour-makka .light__btn .btn {
+        width: 180px;
+
+    }
+
+    .tour-makka h1 {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .tour-makka p {
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .tour-dubai .light__btn .btn {
+        width: 150px;
+    }
+
+    .tour-dubai h1 {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .tour-dubai p {
+        width: 400px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__logo {
+        width: 300px;
+    }
+}
+
+@media (max-width: 441px) {
+    .trav-info__block p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tour-uzbekistan h1 {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .tour-uzbekistan p {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .tour-uzbekistan .light__btn .btn {
+        width: 150px;
+    }
+
+    .tour-makka h1 {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .tour-makka p {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .tour-makka .light__btn .btn {
+        width: 150px;
+    }
+
+    .tour-dubai h1 {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .tour-dubai p {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .tour-dubai .light__btn .btn {
+        width: 150px;
+    }
+
+    .card-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 389px) {
+
+    .footer-list img {
+        width: 100px;
+    }
+
+    .footer-list h3 {
+        font-size: 12px;
+    }
+
+    .footer-list li {
+        font-size: 12px;
+    }
+}
+
+
+// =====================================================
+
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+$bg: #f3f8fa;
+$white: #fff;
+$black: #282936;
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, .076, 1)) {
+    transition: $property $duration $ease;
+}
+
+* {
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+.cards__btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+
+    &.learn-more {
+        width: 12rem;
+        height: auto;
+
+        .circle {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: orange;
+            border-radius: 1.625rem;
+
+            .icon {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: $white;
+
+                &.arrow {
+                    @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                    left: 0.625rem;
+                    width: 1.125rem;
+                    height: 0.125rem;
+                    background: none;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top: -0.25rem;
+                        right: 0.0625rem;
+                        width: 0.625rem;
+                        height: 0.625rem;
+                        border-top: 0.125rem solid #fff;
+                        border-right: 0.125rem solid #fff;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        .button-text {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: white;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    &:hover {
+        .circle {
+            width: 100%;
+
+            .icon {
+                &.arrow {
+                    background: $white;
+                    transform: translate(1rem, 0);
+                }
+            }
+        }
+
+        .button-text {
+            color: $white;
+        }
+    }
+}

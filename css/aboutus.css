@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/aboutus-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-collapse {
+  flex-grow: 0.5 !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: block !important;
+}
+
+.navbar {
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+
+.nav-link {
+  text-shadow: 0px 0px 20px orange;
+  font-size: 26px !important;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: orange;
+  transform: scale(0);
+  transition: 0.3s linear;
+}
+
+.nav-link:hover::after {
+  transform: scale(1);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tel__logo {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: shake 0.5s infinite;
+  animation: shake 0.5s infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+}
+.download__btn {
+  color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid orange;
+  background: none;
+  transition: 0.3s linear;
+}
+
+.download__btn:hover {
+  background-color: orange;
+  transition: 0.3s linear;
+  box-shadow: 0px 0px 10px white;
+}
+
+.svi__img {
+  box-shadow: 0px 0px 10px orange;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+}
+
+.footer {
+  background-image: url(../img/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+}
+
+.footer-list {
+  height: 100%;
+}
+
+.footer-list li:hover {
+  color: orange;
+}
+
+@media (max-width: 991px) {
+  .document__info {
+    text-align: center;
+  }
+  .document__info2 {
+    text-align: center;
+  }
+  .document__info2 img {
+    margin-bottom: 20px;
+  }
+  .footer-list h3 {
+    font-size: 20px;
+  }
+  .footer-list img {
+    width: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .document__info img {
+    width: 400px;
+  }
+  .document__info2 img {
+    width: 400px;
+  }
+}
+@media (max-width: 483px) {
+  .footer-list h3 {
+    font-size: 15px;
+  }
+  .footer-list li {
+    font-size: 15px;
+  }
+  .footer-list img {
+    width: 100px;
+  }
+}
+@media (max-width: 410px) {
+  .document__info img {
+    width: 300px;
+  }
+  .document__info2 img {
+    width: 300px;
+  }
+}/*# sourceMappingURL=aboutus.css.map */
